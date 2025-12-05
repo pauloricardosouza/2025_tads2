@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmiscaeGD</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloConteudo.css">
+</head>
+<body>
+    <div class="header">
+        <nav style="width: 825px;">
+            <a href="index.html">
+                <img src="img/04-2.png" width="200" height="40" style="padding: 6px;">
+            </a>
+            
+            <ul>
+                <!--<li><a href="#">LOJA</a></li>
+                <li>I</li>
+                <li><a href="#">COMUNIDADE</a></li>-->
+                <li><a href="index.html" title="Retornar à Página Inicial" class="active">Página Inicial</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <!--<a href="#" style="padding: 17px;">Olá, Usuário(a)!▼</a>-->
+            <a href="#">
+                <img src="img/logout.png" width="25" height="25" style="padding-left: 0px; padding-right: 15px; padding-top: 15px;">
+            </a>
+            
+        </nav>
+    </div>
+    <div class="login">
+        <h2>Login</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <label for="emailUser">Email</label>
+            <input type="email" id="emailUser" name="emailUser" placeholder="Ex. usuario@email.com" required style="width: 230px;">
+
+            <label for="senhaUser">Senha</label>
+            <input type="password" id="senhaUser" name="senhaUser" minlength="8" maxlength="20" placeholder="********" required style="width: 230px;">
+
+            <input type="submit" value="Login" style="width: 230px;">
+
+        </form>
+        <p style="text-align: center;">Ainda não possui um cadastro? <a href="cadastrar.html">Clique aqui!</a></p>
+    </div>
+</body>
+</html>

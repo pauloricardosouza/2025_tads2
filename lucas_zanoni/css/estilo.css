@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 2px;
+
+    font-family: Actor, sans-serif;
+}
+@font-face {
+      font-family: 'Actor';
+      src: url('fonts/Actor-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
+body{
+    /*background-color: #c0a0df;*/
+    background-image: url(../img/background.jpg);
+    background-size: 2250px;      /* faz a imagem preencher a tela */
+    background-repeat: repeat; /* evita repetição */
+    background-position: center;  /* centraliza a imagem */
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.header{
+    /*width: 800px;*/
+    margin-right: 1px;
+    margin-left: 1px;
+    height: 61px;
+    background-color: #744f94;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    padding: 7px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    white-space: nowrap;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    gap: 0px;
+}
