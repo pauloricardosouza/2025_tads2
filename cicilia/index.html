@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Queijaria Recanto Colonial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/logo.png" alt="logo" width="56" height="56" class="me-2 rounded-circle border">
+      <div>
+        <div class="fw-bold">Queijaria Recanto Colonial</div>
+        <small class="text-muted">Telêmaco Borba - PR</small>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navCollapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        <li class="nav-item ms-2"><a class="btn btn-outline-primary" href="formLogin.html"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="pt-6 pb-5 bg-light" style="margin-top:70px;">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-5">Queijos artesanais com sabor colonial</h1>
+        <p class="lead">Produção local, ingredientes selecionados e tradição de Telêmaco Borba. Entregas e encomendas.</p>
+        <a class="btn btn-primary btn-lg me-2" href="#produtos">Ver produtos</a>
+        <a class="btn btn-outline-secondary btn-lg" href="contato.html">Peça um orçamento</a>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <img src="img/queijaria_interior.jpg" alt="Queijaria" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="produtos" class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="h3">Nossos Produtos</h2>
+      <div>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#newsletterModal"><i class="bi bi-envelope"></i> Assinar newsletter</button>
+      </div>
+    </div>
+
+    <!-- carousel de queijos -->
+    <div id="queijoCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#queijoCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#queijoCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#queijoCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner rounded shadow-sm">
+        <div class="carousel-item active">
+          <img src="img/queijo1.jpg" class="d-block w-100" alt="Queijo Colonial">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-2">
+            <h5>Queijo Colonial Tradicional</h5>
+            <p>Curado, sabor marcante, perfeito para acompanhar café colonial.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/queijo2.jpg" class="d-block w-100" alt="Queijo Especial">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-2">
+            <h5>Queijo Canastra (versão local)</h5>
+            <p>Feito com leite selecionado de produtores da região.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/queijaria_interior.jpg" class="d-block w-100" alt="Interior">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-2">
+            <h5>Fabricação artesanal</h5>
+            <p>Ambiente familiar e processos tradicionais.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#queijoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#queijoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/queijo1.jpg" class="card-img-top" alt="Queijo 1">
+          <div class="card-body">
+            <h5 class="card-title">Queijo Colonial</h5>
+            <p class="card-text">150g — R$ 18,00</p>
+            <button class="btn btn-sm btn-primary add-to-cart" data-name="Queijo Colonial" data-price="18">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/queijo2.jpg" class="card-img-top" alt="Queijo 2">
+          <div class="card-body">
+            <h5 class="card-title">Queijo Canastra</h5>
+            <p class="card-text">200g — R$ 28,00</p>
+            <button class="btn btn-sm btn-primary add-to-cart" data-name="Queijo Canastra" data-price="28">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/queijaria_interior.jpg" class="card-img-top" alt="Queijo 3">
+          <div class="card-body">
+            <h5 class="card-title">Queijo Especial</h5>
+            <p class="card-text">300g — R$ 40,00</p>
+            <button class="btn btn-sm btn-primary add-to-cart" data-name="Queijo Especial" data-price="40">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="h3 mb-3">Sobre a Queijaria</h2>
+    <p>Localizada em Telêmaco Borba, a Queijaria Recanto Colonial nasceu da paixão por queijos artesanais e pela tradição da culinária regional. Trabalhamos com produtores locais e seguimos práticas sustentáveis.</p>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Missão</h5>
+        <p>Produzir queijos artesanais com qualidade, valorizando a tradição e a economia local.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Visão</h5>
+        <p>Ser referência regional em produtos lácteos artesanais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 bg-dark text-white">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="mb-2 mb-md-0">
+      <img src="img/logo.png" width="48" height="48" class="me-2 rounded-circle border">
+      <span class="ms-2">Queijaria Recanto Colonial — Telêmaco Borba</span>
+    </div>
+    <div>© sandbox — Desenvolvido com Bootstrap 5</div>
+    <div>
+      <a class="text-white me-2" href="#"><i class="bi bi-instagram"></i></a>
+      <a class="text-white me-2" href="#"><i class="bi bi-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Newsletter Modal -->
+<div class="modal fade" id="newsletterModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="newsletterForm" class="needs-validation" novalidate>
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="bi bi-envelope-paper"></i> Assine nossa newsletter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="newsName" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="newsName" required>
+            <div class="invalid-feedback">Por favor, informe seu nome.</div>
+          </div>
+          <div class="mb-3">
+            <label for="newsEmail" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="newsEmail" required>
+            <div class="invalid-feedback">Digite um e-mail válido.</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Assinar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
