@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Plataforma de música para artistas independentes." />
+        <meta name="author" content="" />
+        <title>Caixa de Ritmos - Sua Música, Sua Regra</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="0">
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-none" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">Caixa de Ritmos</a>
+
+                <button class="btn btn-outline-primary d-none d-lg-block me-3" data-bs-toggle="modal" data-bs-target="#signupModal" title="Ver Perfil">
+                    <i class="bi-person-circle"></i>
+                </button>
+
+                <form class="d-none d-lg-flex my-2 my-lg-0 order-lg-2" role="search">
+                    <div class="input-group">
+                        <input class="form-control bg-dark text-white border-primary rounded-pill" type="search" placeholder="Buscar Artista, Música..." aria-label="Search" style="width: 250px;">
+                        <button class="btn btn-primary rounded-pill ms-2" type="submit">
+                            <i class="bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse order-lg-3" id="navbarResponsive">
+                    
+                    <ul class="navbar-nav ms-auto my-3 my-lg-0">
+                        
+                        <li class="nav-item d-flex align-items-center me-4">
+                            <button class="nav-link btn btn-outline-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#signupModal">
+                                <span class="d-flex align-items-center">
+                                    <i class="bi-person-plus-fill me-2"></i>
+                                    <span class="small">Criar Conta</span>
+                                </span>
+                            </button>
+                        </li>
+                        
+                        <li class="nav-item d-flex align-items-center me-4">
+                            <a class="nav-link btn btn-outline-primary rounded-pill px-3" href="#features">
+                                <span class="d-flex align-items-center">
+                                    <i class="bi-music-note-list me-2"></i>
+                                    <span class="small">Recursos</span>
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item d-flex align-items-center">
+                            <button class="btn btn-outline-primary rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                                <span class="d-flex align-items-center">
+                                    <i class="bi-chat-text-fill me-2"></i>
+                                    <span class="small">Enviar Feedback</span>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                            <h1 class="display-1 lh-1 mb-3">Crie, Ouça e Compartilhe. Sua Música, Sua Regra.</h1>
+                            <p class="lead fw-normal mb-5">Uma plataforma aberta para artistas independentes e amantes da música. Publique seus beats, explore novos sons e construa sua comunidade.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                         <img class="img-fluid" src="assets/img/musica_app.jpg" alt="Smartphone com visualizador de áudio e fones de ouvido">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="features">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+                        <div class="container-fluid px-5">
+                            <div class="row gx-5">
+                                <div class="col-md-6 mb-5">
+                                    <div class="text-center">
+                                        <i class="bi-hand-index-thumb icon-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Fácil de Usar</h3>
+                                        <p class="text-muted mb-0">Interface simples e intuitiva, feita para que você se concentre apenas na música.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-5">
+                                    <div class="text-center">
+                                        <i class="bi-mic-fill icon-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Sons Autênticos</h3>
+                                        <p class="text-muted mb-0">Publique músicas com qualidade de estúdio e sem compressão!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-5">
+                                <div class="col-md-6 mb-5 mb-md-0">
+                                    <div class="text-center">
+                                        <i class="bi-person-circle icon-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Personalize</h3>
+                                        <p class="text-muted mb-0">Crie seu perfil, organize suas playlists e defina suas regras.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-center">
+                                        <i class="bi-people-fill icon-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Comunidade Livre</h3>
+                                        <p class="text-muted mb-0">Apoie outros artistas independentes e receba apoio em troca.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-0">
+                         <img class="img-fluid rounded-3 mb-5 mb-lg-0" src="assets/img/soundwave.avif" alt="Visual simples de ondas sonoras musicais" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark py-5" id="upload">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h2 class="display-4 lh-1 text-white mb-4">Seu som, sem barreiras.</h2>
+                        <p class="lead text-white-50 mb-4">
+                            Publique suas faixas em qualidade de estúdio (Lossless) e garanta que seus ouvintes escutem exatamente o que você criou. Sem compressão, sem perdas.
+                        </p>
+                        <button class="btn btn-outline-primary rounded-pill btn-lg px-4" data-bs-toggle="modal" data-bs-target="#signupModal">
+                            Começar a Publicar
+                        </button>
+                    </div>
+                    
+                    <div class="col-lg-6 text-center">
+                        <div class="p-4 rounded-3 text-white" style="background-color: #1a1a1a;">
+                            <i class="bi-cloud-upload-fill d-block icon-gradient mb-3" style="font-size: 5rem;"></i>
+                            <h3 class="font-alt">Arrastar e Soltar</h3>
+                            <p class="lead text-white-50">Envie seus arquivos nos formatos FLAC, WAV ou MP3 de alta qualidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Caixa de Ritmos 2025. Todos os Direitos Reservados.</div>
+                    <a href="#!">Privacidade</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Termos</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                        <h5 class="modal-title font-alt text-white" id="signupModalLabel">Acesse ou Crie sua Conta</h5>
+                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body border-0 p-4">
+                        <form id="signupForm">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="signupName" type="text" placeholder="Nome de Usuário" required />
+                                <label for="signupName">Nome de Usuário</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="signupEmail" type="email" placeholder="name@example.com" required />
+                                <label for="signupEmail">Endereço de E-mail</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="signupPassword" type="password" placeholder="Sua Senha" required />
+                                <label for="signupPassword">Senha</label>
+                            </div>
+
+                            <div class="text-end mb-3">
+                                <a href="#!" class="small">Esqueceu a Senha?</a>
+                            </div>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary rounded-pill btn-lg" id="connectButton" type="submit">Conectar / Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Envie seu Feedback</h5>
+                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body border-0 p-4">
+                        <p class="text-center">Sua opinião é importante para o Caixa de Ritmos. Use o formulário abaixo para nos enviar suas sugestões, críticas ou elogios.</p>
+                        <form id="contactForm">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Nome Completo" required />
+                                <label for="name">Nome Completo</label>
+                                <div class="invalid-feedback">Um nome é obrigatório.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
+                                <label for="email">Endereço de E-mail</label>
+                                <div class="invalid-feedback">O E-mail é obrigatório e deve ser válido.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Mensagem" style="height: 10rem" required></textarea>
+                                <label for="message">Mensagem</label>
+                                <div class="invalid-feedback">A mensagem é obrigatória.</div>
+                            </div>
+                            
+                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg" id="submitButton" type="submit">Enviar Feedback</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        </body>
+</html>

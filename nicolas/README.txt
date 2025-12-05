@@ -1,0 +1,7 @@
+O projeto usou o template New Age do Start Bootstrap, a ideia foi criar uma plataforma de música para artistas independeste, a ideia veio de uma forma aleatória, estava procurando novas musicas para adicionar na minha playlist do Spotify e no meio da busca pensei em fazer um site baseado nisso.
+
+O site original era claro, mas o novo desing é mais focado no modo escuro, para combinar mais com apps de músicas, o fundo foi trocado para um cinza escuro e os botões e ícones virou um roxo. Todos os ícones foram trocados para serem sobre música e comunidade e uma seção inteira foi adicionada ao HTML para destacar a publicação de músicas em alta qualidade. usando JavaScript foi feito a validação nas opções de criar uma conta e de enviar um Feedback. Usei o CSS para fazer alguns efeitos ao colocar o mouse sobre uma opção, como por exemplo a opção de "Criar Conta" que fica com uma cor mais clara.
+
+Usei a Inteligência Artificial (Gemini) quando estava com problemas em fazer o código funcionar, como por exemplo a vês que não conseguia fazer as cores das letras ficar em uma cor legível, ficando muito complicado de ler com o fundo escuro, não conseguia achar a linha e pedi pra IA me ajuda nessa questão, na questão do JavaScript foi a parte que eu mais fiz perguntas para a IA, duvidas sobre oque esta de errado no código e corrigindo logo em seguida após entender o meu erro.
+
+Além da IA eu também vi novamente os códigos feitos em sala de aula para conseguir me lembrar de um código em especifico, como por exemplo a parte de colocar uma imagem no site.
