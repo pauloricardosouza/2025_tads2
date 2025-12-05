@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprar Pokémon Card</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #2E005B;">
+
+
+<header class="py-5" style="background-color: #2E005B;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="home.html">Pokécards</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="pedidoEspecial.html">Pedidos de Cartas Especiais</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" 
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Especiais
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Meus Pedidos Especiais</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Área do Colecionador</a></li>
+                        <li><a class="dropdown-item" href="#!">Edições Limitadas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<style>
+ 
+    h1, h3, p, ul, li, label {
+        color: white !important;
+    }
+
+    .text-muted {
+        color: #e0e0e0 !important;
+    }
+
+    .btn-primary {
+        background-color: #7d3cff !important;
+        border: 2px solid white !important;
+    }
+
+    .btn-primary:hover {
+        background-color: #9b6dff !important;
+        border-color: white !important;
+    }
+</style>
+
+<div class="container py-5">
+    <div class="row justify-content-center align-items-center">
+
+        <div class="col-md-6 text-center">
+            <img class="card-img-top" src="assets/img/butterfree.png" alt="Umbreon VMAX"
+                 style="max-width: 380px;">
+        </div>
+
+        <div class="col-md-6">
+            <h1 class="fw-bold">Butterfree </h1>
+
+            <p class="text-muted">Coleção: Evolving Skies(2021)</p>
+
+            <h3 class="text-success fw-bold">R$ 549,90</h3>
+
+            <p class="mt-3">
+                Uma das cartas mais desejadas pelos colecionadores!  
+                Butterfree apresenta arte holográfica premium, alta raridade e grande potencial de valorização.
+            </p>
+
+            <ul>
+                <li>Estado: Mint / Lacrada</li>
+                <li>Edição limitada</li>
+                <li>100% original</li>
+            </ul>
+
+            <button class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#formCompra">
+                Comprar agora
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="formCompra" tabindex="-1" aria-labelledby="formCompraLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="formCompraLabel">Finalizar Compra</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Nome completo</label>
+                <input type="text" class="form-control" placeholder="Seu nome">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">CPF</label>
+                <input type="text" class="form-control" placeholder="000.000.000-00">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" placeholder="seuemail@gmail.com">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Forma de pagamento</label>
+                <select class="form-select">
+                    <option>Cartão de Crédito</option>
+                    <option>Pix</option>
+                    <option>Boleto Bancário</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Endereço Completo</label>
+                <input type="text" class="form-control" placeholder="Rua, número, bairro...">
+            </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+
+       
+        <button class="btn btn-primary" id="btnConfirmar">Confirmar Pedido</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const inputNome = document.querySelector('input[placeholder="Seu nome"]');
+const inputCPF = document.querySelector('input[placeholder="000.000.000-00"]');
+const inputEmail = document.querySelector('input[placeholder="seuemail@gmail.com"]');
+const selectPagamento = document.querySelector('select.form-select');
+const inputEndereco = document.querySelector('input[placeholder="Rua, número, bairro..."]');
+
+document.getElementById("btnConfirmar").addEventListener("click", function () {
+
+    let erro = false;   
+
+    
+    [inputNome, inputCPF, inputEmail, inputEndereco, selectPagamento].forEach(campo => {
+        campo.style.border = "1px solid #ced4da";
+        campo.style.backgroundColor = "white";
+    });
+
+    
+    if (inputNome.value.trim() === "") { marcarErro(inputNome); erro = true; }
+    if (inputCPF.value.trim() === "") { marcarErro(inputCPF); erro = true; }
+    if (inputEmail.value.trim() === "") { marcarErro(inputEmail); erro = true; }
+    if (selectPagamento.value === "") { marcarErro(selectPagamento); erro = true; }
+    if (inputEndereco.value.trim() === "") { marcarErro(inputEndereco); erro = true; }
+
+    
+    if (erro) {
+        alert("⚠️ Por favor, preencha todos os campos corretamente antes de concluir.");
+        return;
+    }
+
+    
+    alert("Pedido realizado com sucesso!");
+
+    const modal = bootstrap.Modal.getInstance(document.getElementById("formCompra"));
+    modal.hide();
+});
+
+function marcarErro(campo) {
+    campo.style.border = "2px solid red";
+    campo.style.backgroundColor = "#ffd6d6";
+}
+
+</script>
+
+</body>
+</html>

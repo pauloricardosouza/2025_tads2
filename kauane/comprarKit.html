@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - Minha Loja</title>
+    <link rel="icon" type="image/x-icon" href="img/ecoLogo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold" href="index.html">EcoStore</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="maisVendidos.html">Mais Vendidos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novidades.html">Novidades</a></li>
+                </ul>
+
+                <a class="btn btn-outline-dark d-flex align-items-center" href="carrinho.html">
+                    <i class="bi bi-cart-fill me-1"></i>
+                    Carrinho
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </a>
+
+                <a class="btn btn-success ms-3" href="formLogin.html">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Conteúdo -->
+    <main class="produto-container">
+
+        <div class="produto-img-area">
+            <img src="img/kitescovas.png" alt="Produto" class="produto-img">
+        </div>
+
+        <div class="produto-info">
+            <h2>Kit de Escovas + Copo</h2>
+            <p class="produto-preco">R$ 89,90</p>
+
+            <p class="produto-descricao">
+                Este é um produto de alta qualidade, perfeito para quem busca um item durável,
+                elegante e funcional. Ideal para uso no dia a dia e disponível em diversas versões.
+            </p>
+
+            <button class="btn-add">Adicionar ao Carrinho</button>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Entre em contato conosco por ecostore@gmail.com</p>
+        <p>©ecostore -- Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

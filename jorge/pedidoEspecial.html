@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pedido Especial - PokéCards</title>
+
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">PokéCards</a>
+            </div>
+        </nav>
+
+        <div class="container py-5">
+            <h1 class="mb-4"><i class="bi bi-stars"></i> Pedido Especial de Cartas Pokémon</h1>
+            <p class="mb-4">Preencha os campos abaixo para solicitar cartas raras, específicas ou difíceis de encontrar. 
+            Retornaremos com disponibilidade e orçamento!</p>
+
+            <form id="pedidoForm">
+                <div class="mb-3">
+                    <label class="form-label">Seu nome</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">E-mail para contato</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nome da Carta</label>
+                    <input type="text" class="form-control" id="nomeCarta" placeholder="Ex: Charizard">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Série / Edição</label>
+                    <input type="text" class="form-control" id="edicao" placeholder="Ex: Base Set, Scarlet & Violet">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Número da Carta</label>
+                    <input type="text" class="form-control" id="numeroCarta" placeholder="Ex: 4/102">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Idioma da Carta</label>
+                    <select class="form-control" id="idioma">
+                        <option>Português</option>
+                        <option>Inglês</option>
+                        <option>Japonês</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Estado desejado</label>
+                    <select class="form-control" id="estado">
+                        <option>Near Mint (NM)</option>
+                        <option>Lightly Played (LP)</option>
+                        <option>Moderately Played (MP)</option>
+                        <option>Heavily Played (HP)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Observações</label>
+                    <textarea class="form-control" id="obs" rows="4"
+                    placeholder="Informações adicionais, preferências ou perguntas"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+
+                <p id="mensagemForm" class="mt-3"></p>
+            </form>
+        </div>
+
+        <div id="footer-placeholder"></div>
+        <script src="js/pedidos.js"></script>
+        <script src="js/include-footer.js"></script>
+        
+    </body>
+</html>

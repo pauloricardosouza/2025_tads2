@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>EcoStore - Login</title>
+
+    <link rel="icon" type="image/x-icon" href="img/ecoLogo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold" href="index.html">EcoStore</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Página Inicial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="maisVendidos.html">Mais Vendidos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novidades.html">Novidades</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LOGIN -->
+    <div class="container d-flex justify-content-center align-items-center" style="height: 90vh;">
+        <div class="card p-4 shadow" style="max-width: 380px; width: 100%;">
+            <h3 class="text-center fw-bold mb-3" style="color:#2d6a4f;">Entrar</h3>
+
+            <!-- FORM LOGIN COM ID -->
+            <form id="formLogin">
+                <div class="mb-3">
+                    <label class="form-label">E-mail</label>
+                    <!-- INPUT COM ID -->
+                    <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Senha</label>
+                    <!-- INPUT COM ID -->
+                    <input type="password" id="senha" class="form-control" placeholder="Digite sua senha" minlength="6" maxlength="10" required>
+                </div>
+
+                <!-- BOTÃO COM ID + DESABILITADO -->
+                <button id="btnLogin" type="submit" class="btn btn-success w-100 mb-3" disabled>Entrar</button>
+
+
+                <div class="text-center">
+                    <a href="#" style="color:#2d6a4f;">Esqueci minha senha</a>
+                </div>
+            </form>
+
+            <p style="text-align:center">Ainda não possui cadastro? <a href="formUsuario.html">Clique aqui!</a></p>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE VALIDAÇÃO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const formLogin = document.getElementById('formLogin');
+            const botaoLogin = document.getElementById('btnLogin');
+
+            function verificarCampos() {
+                const email = document.getElementById('email').value.trim();
+                const senha = document.getElementById('senha').value.trim();
+
+                // Habilita somente se os dois estiverem preenchidos
+                botaoLogin.disabled = (email === "" || senha === "");
+            }
+
+            formLogin.addEventListener('input', verificarCampos);
+            
+        });
+    </script>
+    <script src="js/login.js"></script>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Entre em contato conosco por ecostore@gmail.com</p>
+        <p>©ecostore -- Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
